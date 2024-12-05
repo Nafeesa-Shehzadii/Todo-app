@@ -1,0 +1,151 @@
+ion-toolbar {
+  background-color: var(--ion-toolbar-background);
+  color: var(--ion-toolbar-text-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+.todoListCcontainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--ion-item-background);
+  color: var(--ion-item-text-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(26, 17, 17, 0.1);
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: var(--ion-item-background);
+  color: var(--ion-item-text-color);
+}
+
+.customDatePicker {
+  padding: 10px;
+  background-color: var(--ion-item-background);
+  color: var(--ion-item-text-color);
+}
+
+.filterSortContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  background-color: var(--ion-item-background);
+  color: var(--ion-item-text-color);
+}
+
+.customPopover {
+  width: 100%;
+  background-color: var(--ion-item-background);
+  color: var(--ion-item-text-color);
+}
+
+.customToast {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  max-width: 300px;
+  width: auto;
+  height: 60px;
+  z-index: 1000;
+  color: white;
+}
+
+ion-checkbox {
+  --background: var(--ion-checkbox-background);
+  --border-color: var(--ion-checkbox-border);
+}
+/* ion-select {
+  --color: var(--ion-select-text-color);
+  --background-color: var(--ion-select-background-color);
+}
+
+ion-select .selectAlert {
+  --background: var(--ion-select-background-color) !important;
+  --color: var(--ion-select-text-color) !important;
+} 
+ion-select .selectAlert ion-select-option {
+  --color: var(--ion-select-text-color) !important; 
+}
+
+ion-select .selectAlert button {
+  --color: var(--ion-select-text-color) !important;
+}
+ion-alert:not(.select-alert) {
+  --background: var(--ion-item-background);
+  color: var(--ion-select-text-color) !important;
+}
+
+ion-alert:not(.select-alert) button {
+  color: var(--ion-select-text-color) !important;
+} */
+/* ion-alert:not(.select-alert) {
+  .alert-wrapper.sc-ion-alert-md {
+    background-color: #f8f4aa;
+    --background: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgba(255, 0, 0, 1)
+    );
+    box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.3),
+      inset 0 0 20px rgba(255, 210, 0, 0.4),
+      inset 0 0 30px rgba(220, 120, 0, 0.8);
+  }
+
+  .alert-title.sc-ion-alert-md {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "AustralisProSwash-Italic";
+    color: var(--ion-text-color, #00000080);
+  }
+
+  [aria-checked="true"].sc-ion-alert-md .alert-radio-icon.sc-ion-alert-md {
+    border-color: #00000080;
+  }
+
+  .alert-radio-inner.sc-ion-alert-md {
+    background-color: #00000080 !important;
+  }
+
+  .alert-radio-label.sc-ion-alert-md {
+    white-space: pre-line !important;
+    font-family: "AustralisProSwash-Italic";
+    color: var(--ion-text-color, #000000b3);
+    font-weight: bold;
+  }
+
+  .alert-tappable.sc-ion-alert-md {
+    height: 77px !important;
+  }
+
+  [aria-checked="true"].sc-ion-alert-md .alert-radio-label.sc-ion-alert-md {
+    color: var(--ion-color-step-850, #262626);
+  }
+
+  .alert-button-inner.sc-ion-alert-md {
+    color: #00000080;
+    font-weight: bold;
+    font-size: larger;
+  }
+} */
+/* ion-alert:not(.select-alert) {
+  --background: #222428;
+  --color: white;
+
+  button {
+    color: white !important;
+    font-size: 20px !important;
+  }
+
+  .alert-message {
+    color: #ddd;
+  }
+} */
+.selectOption {
+  --color: red;
+}

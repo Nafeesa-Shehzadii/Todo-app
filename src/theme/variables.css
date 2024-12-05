@@ -1,2 +1,24 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
+/* Default light mode */
+:root {
+  --ion-background-color: #f2f2f6;
+  --ion-toolbar-background: #fff;
+  --ion-item-background: #f2f2f6;
+  --ion-text-color: #000;
+  --ion-checkbox-background: #fff;
+  --ion-checkbox-border: #000;
+  --ion-select-text-color: red; /* White text for dark theme */
+  --ion-select-background-color: #ffffff;
+}
+
+/* Dark mode styles */
+body.dark {
+  --ion-background-color: #222;
+  --ion-toolbar-background: #333;
+  --ion-item-background: #222;
+  --ion-text-color: #fff;
+  --ion-item-border-color: green;
+  --ion-checkbox-background: #fff;
+  --ion-checkbox-border: #ffffff;
+  --ion-select-text-color: red; /* White text for dark theme */
+  --ion-select-background-color: #222; /* Dark background */
+}
