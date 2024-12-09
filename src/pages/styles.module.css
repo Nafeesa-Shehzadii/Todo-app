@@ -1,8 +1,12 @@
 ion-toolbar {
-  background-color: var(--ion-toolbar-background);
-  color: var(--ion-toolbar-text-color);
+  --background: var(--ion-item-background) !important;
+  color: var(--ion-text-color) !important;
   display: flex;
   justify-content: space-around;
+}
+ion-header {
+  --ion-box-shadow: none !important; /* Removes the box shadow */
+  box-shadow: none !important; /* Ensures no box-shadow is applied */
 }
 
 .todoListCcontainer {
@@ -25,11 +29,15 @@ ion-toolbar {
 }
 
 .customDatePicker {
-  padding: 10px;
   background-color: var(--ion-item-background);
-  color: var(--ion-item-text-color);
+  color: var(--ion-text-color);
 }
-
+calendar-month-year-toggle {
+  color: var(--ion-text-color);
+}
+calendar-days-of-week {
+  color: var(--ion-text-color);
+}
 .filterSortContainer {
   display: flex;
   justify-content: space-between;
@@ -62,28 +70,28 @@ ion-checkbox {
 }
 /* ion-select {
   --color: var(--ion-select-text-color);
-  --background-color: var(--ion-select-background-color);
 }
 
 ion-select .selectAlert {
   --background: var(--ion-select-background-color) !important;
   --color: var(--ion-select-text-color) !important;
-} 
+}
 ion-select .selectAlert ion-select-option {
-  --color: var(--ion-select-text-color) !important; 
+  --color: var(--ion-select-text-color) !important;
+  --background-color: var(--ion-item-background) !important;
 }
 
 ion-select .selectAlert button {
   --color: var(--ion-select-text-color) !important;
-}
-ion-alert:not(.select-alert) {
-  --background: var(--ion-item-background);
-  color: var(--ion-select-text-color) !important;
+} */
+ion-alert button {
+  color: var(--ion-color-step-850) !important;
 }
 
-ion-alert:not(.select-alert) button {
-  color: var(--ion-select-text-color) !important;
-} */
+ion-alert .alert-radio-label {
+  color: var(--ion-color-step-850) !important;
+}
+
 /* ion-alert:not(.select-alert) {
   .alert-wrapper.sc-ion-alert-md {
     background-color: #f8f4aa;
@@ -139,13 +147,9 @@ ion-alert:not(.select-alert) button {
 
   button {
     color: white !important;
-    font-size: 20px !important;
   }
 
   .alert-message {
     color: #ddd;
   }
 } */
-.selectOption {
-  --color: red;
-}

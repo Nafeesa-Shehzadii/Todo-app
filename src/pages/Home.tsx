@@ -34,7 +34,6 @@ const Home: React.FC = () => {
   const todos = useSelector((state: any) => state.todos.todos);
   const dispatch = useDispatch();
   const isDarkMode = useSelector((state: any) => state.theme.isDarkMode);
-
   const [inputVal, setInputVal] = useState<string>("");
   const [selectedDate, setSelectedDate] = useState<string>("");
   const [editId, setEditId] = useState<number | null>(null);
@@ -88,7 +87,7 @@ const Home: React.FC = () => {
     dispatch(toggleTodo(id));
   };
 
-  const filteredTodos = todos.filter((todo) => {
+  const filteredTodos = todos.filter((todo: any) => {
     if (filter === "All") return true;
     if (filter === "Completed") return todo.isDone;
     if (filter === "Pending") return !todo.isDone;
@@ -163,11 +162,8 @@ const Home: React.FC = () => {
             value={filter}
             onIonChange={(e) => setFilter(e.detail.value)}
             mode="md"
-            color="danger"
           >
-            <IonSelectOption className={styles.selectOption} value="All">
-              All
-            </IonSelectOption>
+            <IonSelectOption value="All">All</IonSelectOption>
             <IonSelectOption value="Completed">Completed</IonSelectOption>
             <IonSelectOption value="Pending">Pending</IonSelectOption>
           </IonSelect>
